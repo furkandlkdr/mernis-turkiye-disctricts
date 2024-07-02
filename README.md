@@ -73,3 +73,5 @@ SELECT * FROM turkey_cities_districts WHERE city = 'İstanbul';
 ### Contributing
 
 If you find any inaccuracies or have updates to the data, please feel free to submit a pull request.
+
+`Search engine texts: Türkiye ilçe listesi, Türkiye iller listesi, Turkiye District List, Turkiye District, Turkiye Provinces`
