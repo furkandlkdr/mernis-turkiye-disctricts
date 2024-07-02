@@ -14,14 +14,17 @@ This repository provides a comprehensive dataset of Turkish cities (iller) and d
 
 ### JSON
 
-```javascript
-// Example using JavaScript (Node.js)
-const fs = require('fs');
-const data = JSON.parse(fs.readFileSync('turkey_cities_districts.json'));
+You can directly access the JSON data by making a request to the following [URL](https://furkandlkdr.github.io/mernis-turkiye-disctricts/turkey_cities_districts.json).
+This will return the complete JSON dataset of Turkish cities and districts.
 
-// Access cities and districts
-console.log(data.cities[0].name); // Output: "Adana"
-console.log(data.cities[0].districts); // Output: Array of districts in Adana
+```javascript
+// Example using JavaScript (Fetch API)
+fetch('[https://furkandlkdr.github.io/mernis-turkiye-disctricts/turkey_cities_districts.json](https://furkandlkdr.github.io/mernis-turkiye-disctricts/turkey_cities_districts.json)')
+  .then(response => response.json())
+  .then(data => {
+    // Process the data here
+    console.log(data.cities[0].name); // Output: "Adana"
+  });
 ```
 ### SQL
 
