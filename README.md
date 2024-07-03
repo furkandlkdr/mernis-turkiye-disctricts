@@ -32,7 +32,8 @@ Execute the turkey_cities_districts.sql file in your SQL environment to create t
 Use standard SQL queries to interact with the data:
 
 ```SQL
-SELECT * FROM turkey_cities_districts WHERE city = 'İstanbul';
+SELECT * FROM City WHERE City = 'İstanbul';
+SELECT * FROM District WHERE District Name = 'Beşiktaş';
 ```
 
 ### Data Structure (JSON)
