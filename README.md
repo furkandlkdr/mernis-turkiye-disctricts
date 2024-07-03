@@ -34,6 +34,12 @@ Use standard SQL queries to interact with the data:
 ```SQL
 SELECT * FROM City WHERE City = 'İstanbul';
 SELECT * FROM District WHERE District Name = 'Beşiktaş';
+-- OR Use One Querry
+SELECT District.*
+FROM District
+JOIN City ON District.CityId = City.Id
+WHERE City.Name = 'İstanbul' AND District.Name = 'Beşiktaş';
+
 ```
 
 ### Data Structure (JSON)
